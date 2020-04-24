@@ -1692,13 +1692,13 @@ tile(Monitor *m)
 			h = (m->wh - my - gappx * (r - 1)) / r;
 			resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), 0);
 			if (my + HEIGHT(c) + gappx < m->wh)
-                                my += HEIGHT(c); + gappx;
+				my += HEIGHT(c); + gappx;
 		} else {
 			r = n - i;
-                        h = (m->wh - ty - gappx * (r - 1)) / r;
+			h = (m->wh - ty - gappx * (r - 1)) / r;
 			resize(c, m->wx + mw + g, m->wy + ty, m->ww - mw - g - (2*c->bw), h - (2*c->bw), 0);
 			if (ty + HEIGHT(c) + gappx < m->wh)
-                                ty += HEIGHT(c) + gappx;
+				ty += HEIGHT(c) + gappx;
 		}
 }
 
